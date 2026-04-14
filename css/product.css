@@ -1,0 +1,253 @@
+.section_line{
+  margin: 20px 0;
+}
+
+
+
+ /*sec_products*/
+    .product_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    height: auto;      
+}
+
+
+/* product_menu_box */
+.menu_box ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 15px; 
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 900px; 
+  margin-top: -10px;
+}
+
+.menu_img_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #625E5E;
+  
+}
+
+.title_text {
+  font-weight: 500;
+  font-size: 30px;
+  text-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color: #625E5E;
+
+}
+ 
+.menu_img_title img {
+  width: 100%;      
+  max-width: 70px; 
+  height: auto;
+  margin-bottom: 5px;
+  
+}
+
+.menu_img_title img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.menu_img_title div{
+color: #E52AA7;
+font-size: 15px;
+font-weight: 500;
+ white-space: nowrap;
+ margin-bottom: 5px;
+}
+
+
+/* section_line */
+.section_line {
+  display: flex;
+  align-items: center;
+  gap: 20px;  
+}
+
+.line {
+  height: 1px;
+  background: #D5D1D4;
+}
+
+.center {
+  flex: 3;     
+}
+
+.side {
+  flex: 1;     
+}
+
+
+ /*sec_products*/
+    .product_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    height: auto;      
+  max-width: 1200px; 
+  padding: 0 50px;
+     min-height: 900px;
+}
+
+
+/* product_menu_box */
+.product_box ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 250px));
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: start;   
+}
+
+.product_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  color: #625E5E;
+  width: 100%;
+  height: 380px;
+  min-width: 0;
+  
+}
+
+
+.product_img img {
+  width: 100%;      
+  max-width: 200px; 
+  height: 200px;         
+  object-fit: contain;    
+  margin-bottom: 5px;
+  display: block;
+   transition: transform 0.3s ease;
+  backface-visibility: hidden;
+}
+
+.product_img:hover img {
+  transform: scale(1.05);
+}
+
+.product_img div{
+  color: #625E5E;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+
+/* product_section */
+.product_img .product_name{
+  font-size: clamp(15px,1.5vw,18px);
+  white-space: normal;       
+  line-height: 1.4;          
+  min-height: 44px;           
+  overflow: hidden;           
+  text-align: center;
+}
+
+.product_img .product_price{
+  font-size: clamp(14px,1.5vw,16px);
+  color: #E52AA7;
+  margin-bottom: 10px;
+}
+
+.product_img .product_point{
+  width: 100px;           
+  height: 20px;           
+  margin-bottom: 5px;
+  background-color: #E52AA7;
+  color: #fff;
+  font-size: clamp(9px,1.5vw,11px);
+  padding: 0;             
+  border-radius: 8px;
+  display: flex;          
+  align-items: center;  
+  justify-content: center;
+}
+
+.product_img .product_point:empty {
+  visibility: hidden;     
+}
+
+
+/* number_pagination */
+.number_pagination {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 80px;
+  font-size: clamp(15px,1.5vw,18px);
+
+}
+
+.number_pagination a {
+  color: #333;        
+  text-decoration: none;
+}
+
+.page-link {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #333;
+}
+
+.page-link.active {
+  color: #E52AA7;
+}
+
+
+.product_box {
+  min-height: 900px;
+}
+
+#product-list {
+  min-height: 900px;
+}
+
+
+/* media */
+
+/* 910 */
+@media (max-width: 830px) {
+  #product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+}
+
+
+
+/* 670 */
+@media (max-width: 670px) {
+  #product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+     .menu_box ul {
+  grid-template-columns: repeat(3, 2fr); 
+ 
+}
+}
+
